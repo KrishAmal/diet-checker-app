@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import ProteinStatBox from "../components/ProteinStatBox"
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,7 +12,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>Welcome to Diet Checker</div>
+        <div className="prose text-xl italic underline decoration-blue-500 decoration-wavy font-bold underline-offset-2">Diet Checker</div>
+        <ProteinStatBox />
       </main>
     </div>
   )
