@@ -7,6 +7,7 @@ const nextConfig = {
   swcMinify: true,
   basePath: "/diet-checker-app",
   webpack: (config) => {
+    config.cache = false
     config.plugins.push(
       UnoCSS(), // Adding UnoCSS to the project
     )
