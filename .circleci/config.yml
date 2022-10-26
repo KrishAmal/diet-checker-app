@@ -27,7 +27,6 @@ jobs:
     <<: *docker_image
     steps:
       - checkout
-      - run: npm install
       - run: npm audit
 
 # Invoke jobs via workflows
